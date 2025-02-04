@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <style>
+        body {
+            background-color: #ccccc4;
+            }
+        .brand-logo {
+            width: 100px; 
+            display: block;
+            margin: 0 auto;
+        }
+        .brand-title {
+            text-align: center;
+        }
+        .receipt-container {
+            width: 80%;
+            border: 1px solid grey;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .brand-name {
+            text-align: center;
+        }
+        .receipt-detail {
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            margin: 15px 0;
+        }
+        .receipt-body {
+            position: relative;
+            border-bottom: 1px dashed gray;
+        }
+        .receipt-title {
+            text-align: center;
+            font-size: 20px;
+            margin: 25px 0;
+        }
+        .receipt-detail-key {
+            color: gray;
+            width: 100px;
+        }
+        .receipt-detail-value {
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 40%;
+        }
+        .accountant-signature {
+            text-align: right;
+            margin-top: 40px;
+        }
+        .stamp {
+            width: 100px; 
+            position: absolute;
+            right: 10px;
+            bottom: 70px;
+            transform: rotate(-20deg);
+        }
+        .receipt-footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 20px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="receipt-header">
+            <img src="./img/logo.png" class="brand-logo">
+            <h2 class="brand-title">Rayat Shikshan Santhan</h2>
+            <p class="brand-name">
+                Radhabai Kale Mahila Mahavidyalaya, Ahmednagar
+            </p>
+        </div>
+        <hr />
+        <div class="receipt-body">
+            <h3 class="receipt-title">Payment Receipt</h3>
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Receipt No :
+                </div>
+                <div class="receipt-detail-value">
+                    BBA/2023-2024/1507
+                </div>
+            </div>
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Amount :
+                </div>
+                <div class="receipt-detail-value">
+                    15,000
+                </div>
+            </div>
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Payment Mode :
+                </div>
+                <div class="receipt-detail-value">
+                    Cash
+                </div>
+            </div>
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Payment Date :
+                </div>
+                <div class="receipt-detail-value">
+                    July 1, 2024
+                </div>
+            </div>
+            <img src="./img/stamp.png" class="stamp"/>
+            <p class="accountant-signature">
+                Accountant Signature
+                <br /><br /><br />
+            </p>
+        </div>
+        
+        <p>
+            This is a computer receipt and does not require any signature.
+        </p>
+        <div class="receipt-footer">
+            Thank you for your payment.
+        </div>
+    </div>
+</body>
+</html>
